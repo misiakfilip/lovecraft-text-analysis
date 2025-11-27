@@ -16,19 +16,36 @@ The NRC Emotion Lexicon was used to map words to emotions, enabling a detailed e
 
 lovecraft-text-analysis/
 │
+
 ├── data/
+
 │ ├── the_call_of_cthulhu.txt
+
 │ ├── the_dunwich_horror.txt
+
 │ ├── the_shadow_over_innsmouth.txt
+
 │ └── NRC-Emotion-Lexicon-Wordlevel-v0.92.csv
+
 │
+
 ├── notebooks/
+
 │ └── lovecraft_analysis.ipynb
+
 │
+
 ├── src/
+
 │ ├── lovecraft_analysis.py
+
 │
+
 ├── reports/
+
 │ └── Lovecraft_NLP_Analysis_Report.pdf
+
 │
+
 ├── README.md
+
