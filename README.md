@@ -31,4 +31,4 @@ pip install -r requirements.txt
 
 ### Option 2: Run on Google Colab
 Click the link below to open the notebook directly in Colab:
-[Open Lovecraft Analysis in Colab](https://colab.research.google.com/github/yourusername/lovecraft-text-analysis/blob/main/notebooks/lovecraft_analysis.ipynb)
+[Open Lovecraft Analysis in Colab](https://colab.research.google.com/github/misiakfilip/lovecraft-text-analysis/blob/main/notebooks/lovecraft_analysis.ipynb)
