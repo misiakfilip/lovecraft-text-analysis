@@ -32,12 +32,6 @@ pyLDAvis – narzędzie do interaktywnej wizualizacji modeli LDA.
 en_core_web_md – średniej wielkości angielski model językowy SpaCy zawierający wektory słów, używany do lematyzacji i obliczeń semantycznych.
 """
 
-!pip install spacy
-!pip install wordcloud
-!pip install gensim
-!pip install pyLDAvis
-!python -m spacy download en_core_web_md
-
 """Ten fragment kodu importuje wszystkie niezbędne biblioteki do przetwarzania tekstu, analizy danych, modelowania tematycznego, klasyfikacji oraz wizualizacji wyników. Na końcu ładowany jest model językowy SpaCy.
 
 spacy – przetwarzanie tekstu (tokenizacja, lematyzacja, embeddingi).
