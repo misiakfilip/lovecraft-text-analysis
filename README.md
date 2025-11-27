@@ -17,7 +17,7 @@ The NRC Emotion Lexicon was used to map words to emotions, enabling a detailed e
 ### Option 1: Run locally
 1. Clone the repository:
 
-git clone https://github.com/yourusername/lovecraft-text-analysis.git
+git clone https://github.com/misiakfiliip/lovecraft-text-analysis.git
 
 2. Install dependencies:
 
