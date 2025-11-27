@@ -90,20 +90,24 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import ConfusionMatrixDisplay
 import pandas as pd
-
+import os
 
 nlp = spacy.load("en_core_web_md")
 
 """Ten fragment kodu wczytuje zawartość trzech plików tekstowych (trzech książek) do zmiennych w Pythonie. Każda książka jest otwierana z podanej ścieżki na dysku, a jej zawartość jest odczytywana jako tekst w kodowaniu UTF-8 i zapisywana do odpowiednich zmiennych."""
 
+# Ścieżka do folderu 'data' względem lokalizacji skryptu
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+
 #Wczytanie książek
-with open("/content/drive/MyDrive/P01_Projekt/The call of Cthulu.txt", encoding='utf-8') as plik:
+with open(os.path.join(DATA_DIR, "the_call_of_cthulhu.txt"), encoding='utf-8') as plik:
     The_Call_of_Cthulu = plik.read()
 
-with open("/content/drive/MyDrive/P01_Projekt/The Dunwich Horror.txt", encoding='utf-8') as plik:
+with open(os.path.join(DATA_DIR, "the_dunwich_horror.txt"), encoding='utf-8') as plik:
     The_Dunwich_Horror = plik.read()
 
-with open("/content/drive/MyDrive/P01_Projekt/The Shadow over Innsmouth.txt", encoding='utf-8') as plik:
+with open(os.path.join(DATA_DIR, "the_shadow_over_innsmouth.txt"), encoding='utf-8') as plik:
     The_Shadow_over_Innsmouth = plik.read()
 
 """3 funkcje, która dzielą tekst książki na rozdziały oznaczone numerami rzymskimi, liczbą w nowej lini lub  _1. nazwa_ w zależności od książki. Najpierw usuwa nagłówki i stopki Project Gutenberg (wszystko przed markerem START i po markerze END). Następnie dzieli tekst na rozdziały. Zwraca słownik, gdzie kluczami są nazwy rodziałów, a wartościami – tekst danego rozdziału."""
